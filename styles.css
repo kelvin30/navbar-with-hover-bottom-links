@@ -5,43 +5,56 @@
 }
 body {
   font-family: sans-serif;
+  background-color: #000000;
 }
 
+
 nav {
-  height: 10vh;
-  background: #5b78c7;
+  background-color: #000000; /* Black background */
+  padding: 50px 10px; /* Some padding */
+  color: #000000;
+  text-align: center; /* Centered text */
+  font-size: 70px; /* Big font size */
+  font-weight: bold;
+  position: fixed; /* Fixed position - sit on top of the page */
+  top: 0;
+  width: 100%; /* Full width */
+  transition: 0.2s; /* Add a transition effect (when scrolling - and font size is decreased) */
 }
+
 
 .nav-links {
   display: flex;
   list-style: none;
-  width: 50%;
+  width: 80%;
   height: 100%;
   justify-content: space-around;
   align-items: center;
   margin: auto;
+  /* margin-left: 20%; */
 }
 
 .nav-links li a {
   position: relative;
   color: white;
   text-decoration: none;
-  font-size: 16px;
-  padding: 0 10px;
+  font-size: 20px;
+  /* padding: 0 10px; */
   letter-spacing: 0.5px;
   padding: 0 5px;
 }
+
 
 /*This is for the underline in the nav links*/
 a::after{
   content: "";
   position: absolute;
-  background-color: #ff3c78;
-  height: 3px;
+  background-color: #ffffff;
+  height: 1px;
   width: 0;
   left: 0;
   bottom: -10px;
-  transition: 0.3s;
+  transition: 0.5s;
 }
 /*                                           */
 
@@ -49,7 +62,10 @@ a:hover::after{
   width: 100%;
 }
 
-@media screen and (max-width: 600px) {
+
+
+
+@media screen and (max-width: 950px) {
   .line {
     width: 30px;
     height: 3px;
@@ -57,6 +73,7 @@ a:hover::after{
     margin: 5px;
   }
   nav {
+    height: 10vh;
     position: relative;
   }
 
@@ -68,21 +85,25 @@ a:hover::after{
     transform: translate(-5%, -50%);
     z-index: 2;
   }
+  
+  span{
+    display: none;
+  }
 
   .nav-links {
-    position: fixed;
-    background: #5b78c7;
-    height: 100vh;
+    position: relative;
+    background: #000000;
+    height: 60vh;
     width: 100%;
     flex-direction: column;
-    clip-path: circle(100px at 90% -10%);
-    -webkit-clip-path: circle(100px at 90% -10%);
-    transition: all 1s ease-out;
-    pointer-events: none;
+    /* clip-path: circle(100px at 90% -10%);
+    -webkit-clip-path: circle(100px at 90% -10%); */
+    /* transition: all 1s ease-out;
+    pointer-events: none; */
   }
   .nav-links.open {
-    clip-path: circle(1000px at 90% -10%);
-    -webkit-clip-path: circle(1000px at 90% -10%);
+    clip-path: view-box;
+    /* -webkit-clip-path: circle(1000px at 90% -10%); */
     pointer-events: all;
   }
 
@@ -91,17 +112,23 @@ a:hover::after{
   }
   .nav-links li a {
     font-size: 25px;
-  }
-  .nav-links li:nth-child(1) {
-    transition: all 0.5s ease 0.2s;
-  }
-  .nav-links li:nth-child(2) {
-    transition: all 0.5s ease 0.4s;
-  }
-  .nav-links li:nth-child(3) {
-    transition: all 0.5s ease 0.6s;
-  }
+  }  
   li.fade {
     opacity: 1;
+    transition: 0.5s ease-in-out;
   }
+
+
+
+
+  /* .nav-links li:nth-child(1) {
+    transition: all 0.2s ease 0.2s;
+  }
+  .nav-links li:nth-child(2) {
+    transition: all 0.2s ease 0.4s;
+  }
+  .nav-links li:nth-child(3) {
+    transition: all 0.2s ease 0.6s;
+  } */
+
 }
