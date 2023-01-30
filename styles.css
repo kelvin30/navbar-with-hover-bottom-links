@@ -4,22 +4,23 @@
   box-sizing: border-box;
 }
 body {
+  padding-top: 35%;
   font-family: sans-serif;
   background-color: #000000;
 }
 
 
 nav {
-  background-color: #000000; /* Black background */
-  padding: 50px 10px; /* Some padding */
+  background-color: #000000; 
+  padding: 50px 10px; 
   color: #000000;
-  text-align: center; /* Centered text */
-  font-size: 70px; /* Big font size */
+  text-align: center;
+  font-size: 70px;
   font-weight: bold;
-  position: fixed; /* Fixed position - sit on top of the page */
+  position: fixed; /* Fixed position on top of the page */
   top: 0;
-  width: 100%; /* Full width */
-  transition: 0.2s; /* Add a transition effect (when scrolling - and font size is decreased) */
+  width: 100%;
+  transition: 0.2s; /* Transition effect when scrolling and font size is decreased */
 }
 
 
@@ -39,13 +40,12 @@ nav {
   color: white;
   text-decoration: none;
   font-size: 20px;
-  /* padding: 0 10px; */
   letter-spacing: 0.5px;
   padding: 0 5px;
 }
 
 
-/*This is for the underline in the nav links*/
+/*This is for the underline of the nav links*/
 a::after{
   content: "";
   position: absolute;
@@ -62,10 +62,49 @@ a:hover::after{
   width: 100%;
 }
 
+.content{
+  color: #ffffff;
+  margin-bottom: 10vh;
+  margin-left: 10vh;
+  margin-right: 10vh;
+}
+
+/*Style for h1 text*/
+h1{
+  margin-top: initial;
+  text-align: center;
+  font-size: 50px;
+  margin-left: 10%;
+  margin-right: 10%;
+  margin-bottom: 5%;
+  animation: container 1s ease-out normal;
+  opacity: 1;
+}
+@keyframes container{
+  0%{
+    transform: rotate(45deg);
+    opacity: 0;
+  }
+}
+/*                                */
 
 
 
 @media screen and (max-width: 950px) {
+  
+  body{
+    padding-top: 0%;
+    font-family: sans-serif;
+    background-color: #000000;
+  }
+
+  .content{
+    padding-top: 40%;
+    font-family: sans-serif;
+    margin: 5vh;
+  }
+  
+  
   .line {
     width: 30px;
     height: 3px;
@@ -75,6 +114,7 @@ a:hover::after{
   nav {
     height: 10vh;
     position: relative;
+    transition: none;
   }
 
   .hamburger {
@@ -93,17 +133,12 @@ a:hover::after{
   .nav-links {
     position: relative;
     background: #000000;
-    height: 60vh;
+    height: 40vh;
     width: 100%;
     flex-direction: column;
-    /* clip-path: circle(100px at 90% -10%);
-    -webkit-clip-path: circle(100px at 90% -10%); */
-    /* transition: all 1s ease-out;
-    pointer-events: none; */
   }
   .nav-links.open {
     clip-path: view-box;
-    /* -webkit-clip-path: circle(1000px at 90% -10%); */
     pointer-events: all;
   }
 
@@ -117,18 +152,18 @@ a:hover::after{
     opacity: 1;
     transition: 0.5s ease-in-out;
   }
-
-
-
-
-  /* .nav-links li:nth-child(1) {
-    transition: all 0.2s ease 0.2s;
-  }
-  .nav-links li:nth-child(2) {
-    transition: all 0.2s ease 0.4s;
-  }
-  .nav-links li:nth-child(3) {
-    transition: all 0.2s ease 0.6s;
-  } */
-
 }
+
+/*Footer*/
+  .footer {
+        position: relative;
+        left: 0;
+        bottom: 0;
+        height: 10vh;
+        width: 100%;
+        background-color: #000000;
+        color: #ffffff;
+        text-align: center;
+        padding-top: 4vh;
+      }
+      
