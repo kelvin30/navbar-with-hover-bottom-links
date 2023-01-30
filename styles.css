@@ -56,7 +56,7 @@ a::after{
   bottom: -10px;
   transition: 0.5s;
 }
-/*                                           */
+/*      End for the underline            */
 
 a:hover::after{
   width: 100%;
@@ -86,7 +86,7 @@ h1{
     opacity: 0;
   }
 }
-/*                                */
+/*    End of h1 style     */
 
 
 
@@ -166,4 +166,5 @@ h1{
         text-align: center;
         padding-top: 4vh;
       }
+/*End of footer*/
       
