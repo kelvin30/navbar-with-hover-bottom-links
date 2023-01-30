@@ -1,3 +1,5 @@
+
+/*JavaScript Function for the side navbar*/
 const hamburger = document.querySelector(".hamburger");
 const navLinks = document.querySelector(".nav-links");
 const links = document.querySelectorAll(".nav-links li");
@@ -9,6 +11,8 @@ hamburger.addEventListener("click", () => {
   });
 });
 
+
+/* JavaScript function for the navbar when scrolled down*/
 window.onscroll = function() {scrollFunction()};
 
 function scrollFunction() {
