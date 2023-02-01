@@ -22,7 +22,9 @@ nav {
   width: 100%;
   transition: 0.5s; /* Transition effect when scrolling  */
 }
-
+.nav-fix{
+   position: fixed;
+}
 
 .nav-links {
   display: flex;
@@ -91,6 +93,10 @@ h1{
   }
 }
 /*    End of h1 style     */
+
+.paragraph{
+  line-height: 1.8;
+}
 
 @media screen and (max-width: 950px) {
   
