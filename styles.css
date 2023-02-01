@@ -122,7 +122,13 @@ h1{
     height: 10vh;
     position: relative;
     transition: none;
+    margin-bottom: 10vh;
   }
+
+  .push{
+    margin: -1.5vh;
+  }
+  
 
   .hamburger {
     position: absolute;
