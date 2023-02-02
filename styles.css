@@ -4,6 +4,9 @@
   box-sizing: border-box;
   cursor: crosshair; /*Mouse cursor on the site*/
 }
+
+
+
 body {
   padding-top: 25%;
   font-family: sans-serif;
@@ -79,14 +82,17 @@ h1{
   margin-left: 10%;
   margin-right: 10%;
   margin-bottom: 5%;
-  animation: container 1s ease-out normal;
+  animation: fadeIn 2s;
   opacity: 1;
+
 }
-@keyframes container{
-  0%{
-    transform: rotate(45deg);
-    opacity: 0;
-  }
+@keyframes fadeIn{
+ 
+      0% { 
+          opacity: 0; 
+          transform: rotate(10deg);
+         }
+      100% { opacity: 1; }
 }
 /*    End of h1 style     */
 
@@ -144,12 +150,15 @@ h2{
   .nav-links {
     position: relative;
     background: #000000;
-    height: 40vh;
+    /* height: 40vh; */
     width: 100%;
     flex-direction: column;
   }
   .nav-links.open {
+    position: relative;
     clip-path: view-box;
+    height: 35vh;
+    width: 40vh;
     pointer-events: all;
   }
 
