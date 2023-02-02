@@ -5,7 +5,7 @@
   cursor: crosshair; /*Mouse cursor on the site*/
 }
 body {
-  padding-top: 35%;
+  padding-top: 25%;
   font-family: sans-serif;
   background-color: #000000;
 }
@@ -13,7 +13,7 @@ body {
 
 nav {
   background-color: #000000; 
-  padding: 30px 50px; 
+  padding: 30px 70px; 
   text-align: center;
   /* font-size: 70px; */
   /* font-weight: bold; */
@@ -22,10 +22,6 @@ nav {
   width: 100%;
   transition: 0.5s; /* Transition effect when scrolling  */
 }
-.nav-fix{
-   position: fixed;
-}
-
 .nav-links {
   display: flex;
   list-style: none;
@@ -47,7 +43,7 @@ nav {
 }
 
 .push{
-  margin-left: 20vh;
+  margin-left: 35vh;
 }
 
 
@@ -77,7 +73,7 @@ a:hover::after{
 
 /*Style for h1 text*/
 h1{
-  margin-top: initial;
+  margin-top: 5vh;
   text-align: center;
   font-size: 50px;
   margin-left: 10%;
@@ -93,6 +89,13 @@ h1{
   }
 }
 /*    End of h1 style     */
+
+h2{
+  text-align: center;
+  justify-content: center;
+  margin-bottom: 5vh;
+  font-family: Papyrus, fantasy;
+}
 
 .paragraph{
   line-height: 1.8;
@@ -165,11 +168,15 @@ h1{
     transition: none;
   }
 }
+p{
+  display: flex;
+  align-items: center;
+}
+
 /*Footer*/
   .footer {
         position: relative;
-        left: 0;
-        bottom: 0;
+        margin: auto;
         height: 10vh;
         width: 100%;
         background-color: #000000;
@@ -178,4 +185,4 @@ h1{
         padding-top: 4vh;
       }
 /*End of footer*/
-      
+       
