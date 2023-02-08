@@ -18,10 +18,8 @@ nav {
   background-color: #000000; 
   padding: 30px 70px; 
   text-align: center;
-  /* font-size: 70px; */
-  /* font-weight: bold; */
   position: fixed; /* Fixed position on top of the page */
-  top: 0;
+  top: 30vh;
   width: 100%;
   transition: 0.5s; /* Transition effect when scrolling  */
 }
@@ -135,7 +133,7 @@ h2{
   }
 
   .push{
-    margin: -1.5vh;
+    padding-top: -2vh;
   }
   
 
