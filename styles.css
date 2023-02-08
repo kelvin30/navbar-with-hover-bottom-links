@@ -181,7 +181,23 @@ p{
   display: flex;
   align-items: center;
 }
+      /*                      About Section                        */
 
+.paragraph-about{
+  position: relative;
+  align-items: center;
+  justify-content: center;
+}
+
+.about-paragraph{
+ text-align: center;
+ margin: auto;
+ padding: 5vh;
+ letter-spacing: -1px;
+}
+
+
+      /*                   End of About Section                    */
 /*Footer*/
   .footer {
         position: relative;

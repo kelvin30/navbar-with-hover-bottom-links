@@ -11,17 +11,6 @@ hamburger.addEventListener("click", () => {
   });
 });
 
-
-// window.onscroll = function() {scrollFunction()};
-
-// function scrollFunction() {
-//   if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
-//     document.getElementById("navbar").style.fontSize = "30px";
-//   } else {
-//     document.getElementById("navbar").style.fontSize = "220px";
-//   }
-// }
-
 /* JavaScript function for the navbar when scrolled down*/
 const navbar = document.getElementById("navbar");
 
