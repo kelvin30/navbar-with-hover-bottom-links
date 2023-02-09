@@ -26,7 +26,7 @@ nav {
 .nav-links {
   display: flex;
   list-style: none;
-  width: 80%;
+  width: 100%;
   height: 100%;
   justify-content: space-around;
   align-items: center;
@@ -133,7 +133,7 @@ h2{
   }
 
   .push{
-    padding-top: -2vh;
+    padding-top: -5%;
   }
   
 
@@ -155,8 +155,8 @@ h2{
   .nav-links.open {
     position: relative;
     clip-path: view-box;
-    height: 35vh;
-    width: 40vh;
+    height: 45vh;
+    width: 45vh;
     pointer-events: all;
   }
 
