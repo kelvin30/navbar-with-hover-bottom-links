@@ -19,7 +19,7 @@
     padding: 30px 70px; 
     text-align: center;
     position: fixed; /* Fixed position on top of the page */
-    top: 30vh;
+    top: 25vh;
     width: 100%;
     transition: 0.5s; /* Transition effect when scrolling  */
   }
@@ -73,17 +73,40 @@
   }
   
   /*Style for h1 text*/
-  h1{
+   h1{
     margin-top: 5vh;
     text-align: center;
-    font-size: 50px;
+    font-size: 55px;
     margin-left: 10%;
     margin-right: 10%;
     margin-bottom: 5%;
-    animation: fadeIn 2s;
-    opacity: 1;
+    animation: 3s anim-h1 linear ;
   
   }
+  
+  @keyframes anim-h1 {
+  
+  0% {
+    opacity: 0; 
+    transform: translateY(100%);}
+  25% { 
+       opacity: 1; 
+       transform: translateY(0%);
+      }
+  50% {
+    animation: 2s anim-h1 ease;
+    color: white;
+    transform: scale(1.2);
+    opacity: 1;
+    text-shadow: 3px 10px 5px rgba(0, 0, 0, 0.5);
+  }
+  100% {
+    /* transform: scale(1.2);
+    opacity: 1; */
+  }
+}
+
+ /*
   @keyframes fadeIn{
    
         0% { 
@@ -91,7 +114,12 @@
             transform: rotate(10deg);
            }
         100% { opacity: 1; }
-  }
+  } */
+
+/* h1 {
+  animation: 2s anim-h1 linear infinite;
+} */
+
   /*    End of h1 style     */
   
   h2{
@@ -104,6 +132,15 @@
   .paragraph{
     line-height: 1.8;
   }
+
+
+  .sphere{
+    position: relative;
+    width: 70vh;
+    height: 70vh;
+    margin-left: 60vh;
+  }
+
   
   @media screen and (max-width: 950px) {
     

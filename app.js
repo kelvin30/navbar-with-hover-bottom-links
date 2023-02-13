@@ -16,5 +16,9 @@ const navbar = document.getElementById("navbar");
 
 window.addEventListener("scroll", function(){
   let value = window.scrollY;
-  navbar.style.top = 30 + value * -.3 + '%';
+  navbar.style.top = 25 + value * -.3 + '%';
 })
+
+window.onbeforeunload = function () {
+  window.scrollTo(0, 0);
+}
