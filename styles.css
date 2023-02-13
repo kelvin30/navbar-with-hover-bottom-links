@@ -214,8 +214,8 @@
     }
     .sphere{
       position: relative;
-      width: 40vh;
-      height: 40vh;
+      width: 35vh;
+      height: 35vh;
       text-align: center;
       justify-content: center;
       display: block;
