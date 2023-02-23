@@ -19,6 +19,7 @@ window.addEventListener("scroll", function(){
   navbar.style.top = 25 + value * -.3 + '%';
 })
 
+//Scroll up the page when reloading
 window.onbeforeunload = function () {
-  window.scrollTo(0, 0);
+  window.scrollTo(0, 0); 
 }
