@@ -45,7 +45,6 @@
     margin-left: 35vh;
   }
   
-  
   /*This is for the underline of the nav links*/
   .main-links::after{
     content: "";
@@ -117,11 +116,10 @@
     line-height: 1.8;
   }
 
-
   .sphere{
     position: relative;
-    width: 70vh;
-    height: 70vh;
+    width: 25em;
+    height: 19em;
     text-align: center;
     justify-content: center;
     display: block;
@@ -129,7 +127,7 @@
   }
 
   
-  @media all and (max-width: 950px) {
+  @media screen and (max-width: 950px) {
     
     body{
       padding-top: 0%;
@@ -166,7 +164,6 @@
       margin-top: -3vh;
     }
     
-  
     .hamburger {
       position: absolute;
       cursor: pointer;
@@ -213,8 +210,8 @@
     }
     .sphere{
       position: relative;
-      width: 35vh;
-      height: 35vh;
+      width: 20em;
+      height: 17em;
       text-align: center;
       justify-content: center;
       display: block;
@@ -240,8 +237,37 @@
       margin-bottom: 5vh;
       font-family: Papyrus, fantasy;
     }
-  }
- 
+
+    .sponsor-logo{
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      flex: 100%;
+      margin:10% auto;
+    }
+    
+    .sponsor-logo .logo-link{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      padding: 3%;
+      width: 100%;
+      height: 150px;
+
+    }
+
+    .logo-link img{
+      width: 50em;
+      height: 50em;
+    }
+
+    .logo-link{
+      text-decoration: none;
+      font-size: 20%;
+    }
+ }
+
   p{
     display: flex;
     align-items: center;
@@ -249,7 +275,6 @@
     text-align: center;
     margin: auto;
   }
-
 
       /*                      About Section                        */
 
@@ -260,7 +285,6 @@
    letter-spacing: 1px;
    font-family: sans-serif;
 }
-
 
        /*                   Bottom Links                   */
 
@@ -273,8 +297,9 @@
 }
 .bottom-links li {
   position: relative;
-    font-size: 25px;
-    margin: 5vh 1.5vh;
+    font-size: 17px;
+    font-weight: bold;
+    margin: 4vh 1.5vh;
 }
 
 .bottom-links li a{
@@ -283,10 +308,44 @@
   letter-spacing: 0.5px;
 }
 
+.sponsor-logo{
+  position: relative;
+  display: flex;
+  justify-content: center;
+  margin:10% auto;
+}
+
+.sponsor-logo .logo-link{
+  width: 10%;
+  height: 150px;
+  margin:10% auto;
+}
+
+.logo-link{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  text-decoration: none;
+  font-size: 20%;
+}
+
+.logo-link:hover{ 
+  animation: pulse 0.4s;
+  animation-timing-function: linear;   
+}
+
+@keyframes pulse {
+  0% { transform: scale(1); }
+  50% { transform: scale(1.1);}
+  100% { transform: scale(1); }
+  }
+
+
  /*                   Footer                  */
 .footer {
     position: relative;
     font-weight: bold;
+    font-size: 17px;
     margin: auto;
     height: 10vh;
     width: 100%;
