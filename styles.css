@@ -395,6 +395,16 @@
   }
 
 
+.email-link{
+  position: relative;
+  text-decoration: none;
+  color: #ffffff;
+  font-size: 50px;
+  cursor: pointer;
+  margin: 5% auto;
+}
+
+
  /*                   Footer                  */
 .footer {
     position: relative;
