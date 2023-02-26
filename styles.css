@@ -257,6 +257,19 @@
       text-align: center;
       margin: auto;
     }
+
+    .trends-content{
+      justify-content: center;
+      align-items: center;
+    }
+
+    .img-data{
+      height: 100%;
+      width: 100%;
+      border-style: solid;
+      border-radius: 5px;
+      border-color: white;
+    }
     
 
     .sponsor-logo{
@@ -315,6 +328,19 @@
 
 
        /*                   Bottom Links                   */
+
+ .trends-content{
+  justify-content: center;
+  align-items: center;
+}
+
+.img-data{
+  height: 100%;
+  width: 100%;
+  border-style: solid;
+  border-radius: 5px;
+  border-color: white;
+}
 
 .bottom-links{
   display: block;
