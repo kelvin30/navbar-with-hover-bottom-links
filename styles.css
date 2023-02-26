@@ -7,7 +7,7 @@
   
   body {
     padding-top: 25%;
-    font-family: sans-serif;
+    font-family:  Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     background-color: #000000;
   }
   
@@ -109,11 +109,21 @@
     text-align: center;
     justify-content: center;
     margin-bottom: 5vh;
-    font-family: Papyrus, fantasy;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
   }
   
   .paragraph{
     line-height: 1.8;
+  }
+
+  .paragraph-companies{
+    text-align: center;
+    margin: auto;
+  }
+
+  .paragraph-companies a{
+    text-decoration: none;
+    color: #ffffff;
   }
 
   .sphere{
@@ -138,7 +148,7 @@
       text-align: center;
       justify-content: center;
       margin-bottom: 5vh;
-      font-family: Papyrus, fantasy;
+      font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     }
   
     .content{
@@ -235,8 +245,19 @@
       text-align: center;
       justify-content: center;
       margin-bottom: 5vh;
-      font-family: Papyrus, fantasy;
+      font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     }
+
+    .about-title{
+      text-align: start;
+      margin: auto 7%;
+    }
+
+    .paragraph-companies{
+      text-align: center;
+      margin: auto;
+    }
+    
 
     .sponsor-logo{
       position: relative;
@@ -279,12 +300,19 @@
       /*                      About Section                        */
 
 .about-p{
-   text-align: center;
-   margin: auto;
+   text-align: start;
+   margin: auto 5%;
    padding: 5vh;
    letter-spacing: 1px;
    font-family: sans-serif;
 }
+
+.about-title{
+  text-align: start;
+  margin: auto 7%;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
 
        /*                   Bottom Links                   */
 
