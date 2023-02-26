@@ -127,7 +127,7 @@
   }
 
   
-  @media screen and (max-width: 950px) {
+  @media screen and (max-width: 980px) {
     
     body{
       padding-top: 0%;
@@ -215,7 +215,7 @@
       text-align: center;
       justify-content: center;
       display: block;
-      margin: 0 auto;
+      margin: 10% auto;
       z-index: -1;
     }
 
